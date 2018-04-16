@@ -1,5 +1,9 @@
+import webbrowser
+
 import media
 import fresh_tomatoes
+
+# ModuleName.className - the instance inherit the properties of the class movies and it accepts 4 items
 
 cars_2 = media.Movie(" A Car story",
                      "hollywood wanna be",
@@ -31,5 +35,8 @@ Minions = media.Movie("Minions",
                       "http://t2.gstatic.com/images?q=tbn:ANd9GcRbHFoQWQZLymKtwzfjVEvfNDOIdcWOL-tUFstMC00m5OMf961D",  # NOQA
                       "https://www.youtube.com/watch?v=P9-FCC6I7u0")
 
+
+# puts the movies in a list that are passed to open the movies page
+# function in fresh_tomatoes
 movies = [cars_2, Boss_Baby, Turbo, Rio, Ratatouille, Minions]
 fresh_tomatoes.open_movies_page(movies)
